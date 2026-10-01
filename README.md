@@ -1,11 +1,15 @@
-# http-loadtest
+# node-loadtest
 
 > High-performance HTTP load testing CLI for Node.js, powered by undici `dispatch()`.
 
 ```bash
+npx node-loadtest https://api.example.com -n 10000 -c 100
+# or with global install
 hlt https://api.example.com -n 10000 -c 100
 ```
 
+[![npm version](https://img.shields.io/npm/v/node-loadtest.svg)](https://www.npmjs.com/package/node-loadtest)
+[![npm downloads](https://img.shields.io/npm/dm/node-loadtest.svg)](https://www.npmjs.com/package/node-loadtest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D20-brightgreen.svg)](https://nodejs.org/)
 
