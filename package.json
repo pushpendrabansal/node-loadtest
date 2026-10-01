@@ -1,0 +1,57 @@
+{
+  "name": "http-loadtest",
+  "version": "0.1.0",
+  "description": "High-performance HTTP load testing CLI for Node.js, powered by undici dispatch()",
+  "type": "module",
+  "bin": {
+    "hlt": "./bin/hlt.mjs"
+  },
+  "main": "./dist/engine.js",
+  "types": "./dist/engine.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/engine.d.ts",
+      "import": "./dist/engine.js"
+    }
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -w -p tsconfig.build.json",
+    "prepack": "npm run build",
+    "test": "vitest run",
+    "self-benchmark": "node bin/hlt.mjs self-benchmark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pushpendrabansal/http-loadtest.git"
+  },
+  "keywords": [
+    "load-testing",
+    "undici",
+    "benchmark",
+    "http",
+    "performance",
+    "hdr-histogram",
+    "wrk",
+    "k6"
+  ],
+  "author": "pushpendrabansal",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "hdr-histogram-js": "^3.0.1",
+    "undici": "^8.11.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
