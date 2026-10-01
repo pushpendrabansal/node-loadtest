@@ -35,9 +35,9 @@ hlt https://api.example.com -n 10000 -c 100
 ## Install
 
 ```bash
-npm install -g http-loadtest
+npm install -g node-loadtest
 # or run directly with npx
-npx http-loadtest https://api.example.com -n 1000 -c 50
+npx node-loadtest https://api.example.com -n 1000 -c 50
 ```
 
 Requires **Node.js >= 20**.
