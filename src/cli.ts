@@ -16,7 +16,7 @@ export function buildCli(): Command {
   program
     .name('hlt')
     .description('High-performance HTTP load testing CLI for Node.js, powered by undici dispatch()')
-    .version('0.1.0')
+    .version('0.1.1')
     .enablePositionalOptions();
 
   program

@@ -1,6 +1,6 @@
 {
   "name": "node-loadtest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "High-performance HTTP load testing CLI for Node.js, powered by undici dispatch()",
   "type": "module",
   "bin": {
@@ -31,6 +31,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pushpendrabansal/node-loadtest.git"
+  },
+  "homepage": "https://github.com/pushpendrabansal/node-loadtest#readme",
+  "bugs": {
+    "url": "https://github.com/pushpendrabansal/node-loadtest/issues"
   },
   "keywords": [
     "load-testing",
